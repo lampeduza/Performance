@@ -1,0 +1,38 @@
+html {
+  box-sizing: border-box;
+  // scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1e1c;
+  margin: 0;
+  min-width: 320px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+picture {
+  display: block;
+}

@@ -1,0 +1,272 @@
+/* @media */
+/* retina */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lora", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1f1e1c;
+  margin: 0;
+  min-width: 320px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+picture {
+  display: block;
+}
+
+/* Lora 400 */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lora_400.woff2") format("woff2"), url("../fonts/lora_400.woff") format("woff");
+}
+/* Lora 500 */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/lora_500.woff2") format("woff2"), url("../fonts/lora_500.woff") format("woff");
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 25px;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/*
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 3%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1300px;
+    padding: 0 5%;
+    margin: 0 auto;
+  }
+}
+
+*/
+.header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding: 28px 0;
+  border-bottom: 1px solid #1f1e1c;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__item {
+  margin-right: 30px;
+}
+.navigation__item:last-child {
+  margin-right: 0;
+}
+
+.navigation__link {
+  color: #000;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.main {
+  grid-column: 1/-1;
+  grid-row: 2/-2;
+  margin-bottom: 70px;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-row-gap: 70px;
+}
+
+.article__section {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+}
+.article__section--1 {
+  grid-row: 2/3;
+}
+.article__section--1 .article__text {
+  width: 30.6%;
+}
+.article__section--1 .article__figure {
+  width: 65.32%;
+  display: flex;
+  justify-content: space-between;
+}
+.article__section--1 .article__figure .article__picture {
+  width: 47%;
+}
+.article__section--1 .article__figure .article__info {
+  width: 47%;
+}
+.article__section--2 {
+  grid-row: 3/4;
+}
+.article__section--2 .article__text {
+  width: 30.6%;
+}
+.article__section--2 .article__figure {
+  width: 65.32%;
+}
+.article__section--2 .article__picture {
+  margin-bottom: 30px;
+}
+.article__section--3 {
+  grid-row: 4/5;
+}
+.article__section--3 .article__figure {
+  width: 30.6%;
+}
+.article__section--3 .article__figure:first-child {
+  width: 65.32%;
+}
+.article__section--3 .article__picture {
+  margin-bottom: 30px;
+}
+.article__section--4 {
+  grid-row: 5/-1;
+}
+.article__section--4 .article__text {
+  width: 30.6%;
+}
+.article__section--4 .article__figure {
+  width: 30.6%;
+}
+.article__section--4 .article__picture {
+  margin-bottom: 30px;
+}
+
+.article__figure {
+  margin: 0;
+}
+
+.article__shown,
+.article__photographer {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.article__shown {
+  margin-bottom: 10px;
+}
+
+.article__text {
+  margin: 0;
+}
+
+.premiere {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+
+.premiere__title {
+  color: #1f1e1c;
+  font-size: 46px;
+  line-height: 69px;
+  font-weight: inherit;
+  margin: 70px 0 30px 0;
+}
+
+.premiere__figure {
+  margin: 0;
+}
+
+.premiere__info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.premiere__date,
+.premiere__author,
+.premiere__photographer {
+  color: #1f1e1c;
+}
+
+.premiere__date {
+  margin-right: 50px;
+}
+
+.premiere__author {
+  margin: 0 50px 0 0;
+}
+
+.premiere__photographer {
+  margin: 0;
+}
+
+.footer {
+  grid-column: 1/-1;
+  grid-row: 3/-1;
+  border-top: 1px solid #1f1e1c;
+  padding: 28px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*# sourceMappingURL=style.css.map */

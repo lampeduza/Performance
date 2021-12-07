@@ -1,0 +1,19 @@
+/* Lora 400 */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/lora_400.woff2") format("woff2"),
+    url("../fonts/lora_400.woff") format("woff");
+}
+
+/* Lora 500 */
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/lora_500.woff2") format("woff2"),
+    url("../fonts/lora_500.woff") format("woff");
+}
