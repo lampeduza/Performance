@@ -66,3 +66,15 @@
 		line-height: 36px;
 	}
 }
+
+@media (max-width: $tablet-width-s) {
+	.navigation__list {
+		padding: 30px 0;
+	}
+
+	.navigation__link {
+		padding: 8px 0 8px 100px;
+		font-size: 22px;
+		line-height: 34px;
+	}
+}

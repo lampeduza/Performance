@@ -4,3 +4,9 @@
 
 	margin-bottom: 70px;
 }
+
+@media (max-width: $tablet-width-s) {
+	.main {
+		margin-bottom: 50px;
+	}
+}

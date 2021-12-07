@@ -207,3 +207,38 @@
 		}
 	}
 }
+
+@media (max-width: $tablet-width-s) {
+	.article {
+		grid-row-gap: 20px;
+	}
+
+	.article__section {
+		&--1 {
+			.article__text {
+				margin-bottom: 20px;
+			}
+		}
+
+		&--2,
+		&--4 {
+			.article__text {
+				margin-bottom: 20px;
+			}
+		}
+
+		&--2,
+		&--3,
+		&--4 {
+			.article__picture {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.article__shown,
+	.article__photographer {
+		font-size: 12px;
+		line-height: 18px;
+	}
+}

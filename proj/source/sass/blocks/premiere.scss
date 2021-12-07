@@ -93,3 +93,21 @@
 		margin-bottom: 15px;
 	}
 }
+
+@media (max-width: $tablet-width-s) {
+	.premiere__title {
+		margin: 15px 0;
+	}
+
+	.premiere__date,
+	.premiere__author,
+	.premiere__photographer {
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.premiere__date,
+	.premiere__author {
+		margin-right: 15px;
+	}
+}

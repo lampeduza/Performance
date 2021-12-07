@@ -17,3 +17,16 @@
 	line-height: 21px;
 	margin: 0;
 }
+
+@media (max-width: $tablet-width-s) {
+	.footer__link {
+		width: 50%;
+	}
+
+	.footer__copyright {
+		text-align: right;
+		width: 45%;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
