@@ -58,7 +58,7 @@ gulp.task("server", function () {
   gulp.watch("source/img/icon-*.svg");
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
   gulp.watch('source/js/**/*', gulp.series(gulp.series(["js"])));
-  gulp.watch('source/img/**/*', gulp.series(["images", "webp"]));
+  gulp.watch('source/img/**/*', gulp.series(["copy"]));
 });
 
 gulp.task("refresh", function (done) {
@@ -80,7 +80,7 @@ gulp.task("images", function() {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 75}))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 /*
